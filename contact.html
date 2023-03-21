@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" sizes="50x50" href="logo2.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    .topnav {
+      overflow: hidden;
+    }
+
+    .topnav a {
+      font-weight: bolder;
+      float: left;
+      color: #525252;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 19px;
+    }
+
+    .topnav a:hover {
+      background-color: #5b5b5b;
+      color: black;
+    }
+
+    .topnav a.active {
+
+      color: black;
+    }
+    #logo {
+            position: relative;
+        }
+        #logo img {
+            position: absolute;
+            top: 0px;
+            right: 50px;
+            width: 150px;
+
+/*Paramétre esthétique sur le formulaire*/
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+p{
+  font-family: cursive;
+}
+.CV-Button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.CV-Button:hover {
+  background-color: #0062cc;
+  cursor: pointer;
+}
+.CV-Button:before {
+  content: url("icone-cv.png");
+  display: inline-block;
+  margin-right: 10px;
+  height: 20px;
+}
+</style>
+</head>
+<body>
+  <div id="logo">
+  <img src="logo2.png">
+</div>
+  <div class="topnav">
+ <a href="index.html">Accueil</a>
+  <a href="Qui_suis-je.html">Qui suis-je ?</a>
+  <a href="Compétences.html">Mes Compétences </a>
+  <a href="ProjetPro.html">Mon projet professionnel </a>
+  <a href="Centre_interet.html">Centres d'intérêt</a>
+  <a class="active" href="contact.html">Contact</a>
+</div>
+    <br>
+    <br>
+    <p>Email : mohamedmzoughi151@gmail.com</p>
+    <p>Facebook :<a href="https://www.facebook.com/profile.php?id=100009604001061">Mohamed Amine Mzoughi</a></p>
+    <p>Instagram :<a href="https://www.instagram.com/mohamed_amine_mzoughii/?utm_medium=copy_link&fbclid=IwAR1Ze2sCpyzpne0vSWQ9kEW5mXUqquXJ_pqvxbbIYNJtyoOoYkLGx3o3xC4">mohamed_amine_mzoughii</a></p>
+    <p>Mon CV en PDF:    <button class="CV-Button" onclick="window.open('CV_MZOUGHI_BUT 2 RT.pdf')">Ouvrir le CV</button></p>
+    <br>
+    <br>
+
+<h3>Formulaire de contact :</h3>
+<!--ajouter un formulaire-->
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Prénom</label>
+    <input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
+
+    <label for="lname">Nom</label>
+    <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
+
+
+
+    <label for="subject">Sujet</label>
+    <textarea id="subject" name="subject" placeholder="Rédigez quelque chose.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <br>
+
+  <audio controls>
+    <source src="son.mp3" type="audio/mp3">
+</div>
+
+</body>
+</html>
