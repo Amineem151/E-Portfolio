@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Ajouter le logo sur l'onglet-->
+    <link rel="icon" type="image/png" sizes="50x50" href="logo2.png">
+    <meta charset="utf-8">
+
+    <title>Mohamed Amine Mzoughi</title>
+    <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+/*Régler l'emplacement de l'arriére plan*/
+    .bg {
+      background-image: url("background1.jpeg");
+
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.7;
+
+    }
+    /*backgroung du navbar transparent*/
+    .topnav {
+      overflow: hidden;
+
+    }
+/*Réglage esthétique sur le navbar*/
+    .topnav a {
+      font-weight: bolder;
+      float: left;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 19px;
+    }
+/*changement de couleur quand on met le curseur sur le navbar*/
+    .topnav a:hover {
+      background-color: #ffff;
+      color: black;
+    }
+
+    .topnav a.active {
+
+      color: rgb(255, 0, 0);
+    }
+    /*ajuster le logo*/
+    #logo {
+            position: relative;
+        }
+        #logo img {
+            position: absolute;
+            top: 0px;
+            right: 50px;
+            width: 50px
+        }
+        /*Réglage esthétique sur les titres h1*/
+    h1 {
+      text-shadow: 2px 2px 5px red;
+      color: white;
+      height: 500px;
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+</style>
+  </head>
+<!--insérer le paramétre background/le logo-->
+  <body class="bg">
+    <div id="logo">
+    <img src="logo2.png" alt="Logo">
+</div>
+<!--Les block du background-->
+    <div class="topnav">
+   <a class="active" href="index.html">Accueil</a>
+    <a href="Qui_suis-je.html">Qui suis-je ?</a>
+    <a href="Compétences.html">Mes Compétences </a>
+    <a href="ProjetPro.html">Mon projet professionnel </a>
+    <a href="Centre_interet.html">Centres d'intérêt</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <h1>Bienvenue dans mon site <br> Je suis Mohamed Amine Mzoughi </h1>
+
+
+
+  </body>
+</html>
